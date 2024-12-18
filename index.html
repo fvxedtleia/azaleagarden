@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>azaleagarden</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="header-aside">
+            <img src="images/logo.png" alt="logo" class="img-logo">
+            <nav id='menu'>
+                <p class="logo-name">Azalea Garden</p>
+                <ul>
+                <li><a href=#main>О НАС</a></li>
+                <li><a href='flower.html' class='dropdown-arrow'>КАТАЛОГ</a>
+                    <ul class='sub-menus'>
+                    <li><a href="flower.html" class="sub-menus-name">букеты</a></li>
+                    <li><a href='weddingflo.html' class="sub-menus-name">свадебные букеты</a></li>
+                    </ul>
+                </li>
+                <li><a href=#footer>КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+            <div class="cart-img">
+                <a href='cart.html'><img src="images/cart.svg" alt="корзина" class="imgcart"></a>
+                <div class="cart__num" id="cart_num">0</div> <!-- вутэто -->
+            </div>
+        </div>
+        <div class="header_text">
+            <p class="text_header_std">Студия цветов <br> в Москве</p>
+            <p class="text_header_flo">Уникальные цветы, наполненные заботой и теплом!</p>
+        </div>
+        <div class="header_button">
+            <p ><a href='flower.html' class="text_button" >Выбрать букет</a></p>
+        </div>
+    </header>
+
+    <main id="main">
+        <p class="text-studio-zag">Наша студия</p>
+
+        <div class="text-studio-one"> 
+            <p class="text-studio-onetext">Добро пожаловать в <b><i>"Azalea Garden" </i></b>— уникальную студию цветов,  расположенную в сердце Москвы! Наша студия — это место, где  цветы оживают, а каждый букет становится настоящим произведением искусства.   Мы стремимся привнести красоту и гармонию в вашу жизнь, создавая неповторимые флористические композиции   для любых событий и настроений.
+            </p>
+            <img src="images/create_std.jpg" alt="girlcreateflower" class="girlcreateflower">
+        </div>
+        
+        <div class="text-studio-two"> 
+            <img src="images/create-flo.png" alt="girlcreateflower" class="girlcreateflower">
+            <p class="text-studio-twotext"><b><i>Наши ценности:</i></b> <br><br><br>
+                Мы гордимся тем, что работаем только с качественными и свежими цветами от проверенных поставщиков. Наша команда заботится об экологии, поэтому мы используем экологически чистые материалы и упаковку. Мы стремимся к тому, чтобы каждая композиция не только радовала глаз, но и была создана с уважением к природе.
+            </p>
+        </div>
+
+        <div class="text-studio-three">
+            <p class="text-studio-onetext three"><b><i>Почему выбирают нас?</i></b> <br><br><br>
+               • Индивидуальный подход: Мы внимательно слушаем наших клиентов и учитываем все детали, чтобы создать именно то, что они хотят. <br>
+                • Качество: Наши флористы обладают высоким уровнем квалификации и опытом работы, что гарантирует отличное качество каждой композиции <br>
+                • Творческий подход: Мы постоянно следим за новыми тенденциями в мире флористики и готовы предложить вам самые актуальные идеи.
+            </p>
+            <img src="images/flo-flo.png" alt="flower" class="createflower" >
+        </div>
+        <div class="azalea-center">
+            <p class="azalea-center"> <b><i>"Azalea Garden"</i></b> — это не просто студия цветов; это место, где ваши мечты о красоте становятся реальностью. Мы приглашаем вас окунуться в мир ярких красок и удивительных ароматов вместе с нами. Позвольте нам добавить немного волшебства в вашу жизнь!</p>
+            <img src="images/flower-studio.jpg" alt="studio" class="studio">
+        </div>
+    </main>
+
+    
+
+    <footer id="footer">
+        <div class="contacts">
+        <p class="contact"><b>Контакты</b></p>
+        <p><b>Оставьте свой e-mail для <br>
+            подписки на рассылку</b></p>
+            <form id="subscribe-form" onsubmit="subscribe(event)">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" required>
+    
+                <label for="email" class="email">Ваш Email:</label>
+                <input type="email" id="email" required>
+                
+                <button type="submit" class="submit">ОТПРАВИТЬ</button>
+            </form>
+            <p id="message" class="hidden"></p> 
+            <p class="cont">Наши контакты</p>
+            <div class="numpoch">
+                <div class="numberblock"><img src="images/number.png" alt="num" class="number poch"><p>+7(800) 555-35-35</p></div>
+                <div class="numberblock"><img src="images/pochta.png" alt="pochta" class="number poch"><p>azaleagarden@yandex.ru</p></div>
+            </div> 
+        </div>
+        
+        <div class="carta-scr">
+            <div class="carta"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aab1f320cf398eb80c0e6d9ead2b64b7ae055a0d5fe0ad5d77120c5f28d4021ac&amp;width=700&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script></div>
+            <div class="socialnetwork">
+                <a href="https://t.me/fvxedtleia"><img src="images/telegram.png" alt="телеграм" class="size"></a>
+                <a href="https://wa.me/89659422558?text="><img src="images/whatsapp.png" alt="ватцап" class="size"></a>
+                <a href="https://vk.com/fvxedtleia"><img src="images/vk.png" alt="вк" class="size"></a>
+                <a href="https://ru.pinterest.com"><img src="images/pinterest.png" alt="пинтерест" class="size"></a>
+                <a href=""><img src="images/insta.png" alt="инстаграм" class="size"></a>
+                <a href=""><img src="images/tiktok.png" alt="тикток" class="size"></a>
+            </div>
+        </div> 
+        <div class="navbar">
+            <a href="#main"><p>О НАС</p></a>
+            <a href="flower.html"><p>БУКЕТЫ</p></a>
+            <a href="weddingflo.html"><p>СВАДЕБНЫЕ БУКЕТЫ</p></a>
+            <a href="#footer"><p>КОНТАКТЫ</p></a>
+            <a href="cart.html"><p>КОРЗИНА</p></a>
+        </div>   
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
