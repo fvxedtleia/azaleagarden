@@ -3,28 +3,34 @@ document.querySelector('html').style.scrollBehavior = 'smooth';
 
 function clearCart() {
     cart = 0;
-    showCounter.textContent = cart; 
+    showCounter.textContent = cart;
+    buketes = calcBuckets(cart); 
     document.getElementById("cart_nums").textContent = "В корзине: "  + String(cart) + " " + buketes;
     localStorage.setItem("cart", 0);
-    buketes = "букетов"
+}
+
+function calcBuckets(cart){
+    let buketes = "";
+    if ([11, 111,12,13,14,112,113,114].includes(Number(cart))) {
+        buckets = "букетов";
+    } else if (cart == 1){
+        buketes = "букет";
+    } else if([5,6,7,8,9,0].includes(Number(String(cart)[String(cart).length-1]))){
+        buketes = "букетов";
+    } else {
+        buketes = "букета";
+    }
+    return buketes;
 }
 let cart = 0;
-let buketes = "букетов";
 const storedArr = localStorage.getItem("cart");
 if (storedArr !== null) {
     cart = Number(storedArr);
 }
 let showCounter = document.getElementById("cart_num");
 showCounter.textContent = cart;
-if ([11, 111,12,13,14,112,113,114].includes(Number(cart))) {
-    buckets = "букетов";
-} else if([5,6,7,8,9,0].includes(Number(String(cart)[String(cart).length-1]))){
-    buketes = "букетов";
-} else if(cart == 1) {
-    buketes = "букет";
-} else {
-    buketes = "букета";
-}
+
+let buketes = calcBuckets(cart);
 document.getElementById("cart_nums").textContent = "В корзине: " + String(cart) + " " + buketes;
 
 function subscribe(event) {

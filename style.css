@@ -4,14 +4,140 @@ body {
     background-color: #eaeaea;
 }
 
-.imgcart{
-    width: 60px ;
-    height: 60px ;
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .jura-font {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+/* header */
+
+header{
+    background-size:100%;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-image: url(images/backgroundheader.png);
+    padding-top: 20px;
+    font-family: "inter";
+}
+
+.header-aside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.header_button{
+    background-color: rgb(219, 202, 220);
+    width: 300px;
+    height: 76px;
+    border-radius:10px;
+    border-width: 0.5px;
+    border-style:solid;
+    border-color:black;
+    opacity: 0.7;
+    align-items: center; 
+    display: flex;
+    justify-content: center;
+    margin-left:30px;
+    margin-top: 70px;
+    box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5) ;
+}
+
+.header_button:hover{
+    background: #ede3ec;
+	color: #444444;
+    transition:0.6s ;
+}
+
+.header_buttons{
+    margin-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+.text_header_std{
+    font-size: 100px;
+    color: White;
+    text-shadow: 1px 5px 20px black;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    margin-top: 100px;
+}
+
+.text_header_flo{
+    font-size: 40px;
+    color: White;
+    text-shadow: 1px 5px 20px black;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.header-flo-buq{
+    text-align: center;
+    font-family: "Inter";
+    font-size: 200px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.header-flo{
+    background-size:100%;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-color: rgb(187, 185, 186);
+    padding-top: 20px;
+    font-family: "inter";
+}
+
+.header-flo-text{
+    display: flex;
+    font-size: 30px;
+    margin: 90px;
+    font-weight: 200;
+    margin-left: 12%;
+    margin-top: 35px;
+}
+
+.header-flo-buq-wed{
+    text-align: center;
+    font-family: "Inter";
+    font-size: 150px;
+    font-weight: 200;
+    font-style: italic;
 }
 
 .imgcart{
+    width: 60px ;
+    height: 60px ;
     width: 40px;
     margin: 0;
+}
+
+.img-logo{
+    width: 80px ;
+    height: 80px ;
+    border-radius:10px ;
+    box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5) ;
+}
+
+.logo-name{
+    margin-left: 3%;
+    white-space: nowrap;
+    font-size: 25px;
+    font-family: "inter";
+    font-weight: 250;
 }
 
 .cart__num {
@@ -42,28 +168,7 @@ body {
     box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5) ;
 }
 
-.img-logo{
-    width: 80px ;
-    height: 80px ;
-    border-radius:10px ;
-    box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5) ;
-}
-
-.header-aside{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.logo-name{
-    margin-left: 3%;
-    white-space: nowrap;
-    font-size: 25px;
-    font-family: "inter";
-    font-weight: 250;
-}
+/* меню */
 
 #menu {
 	background: #DBCADC;
@@ -160,75 +265,31 @@ body {
     transition:0.6s ;
 } 
 
-header{
-    background-size:100%;
-    height: 900px;
-    background-repeat: no-repeat;
-    background-image: url(images/backgroundheader.png);
-    padding-top: 20px;
-    font-family: "inter";
-}
-.header_button{
-    background-color: rgb(219, 202, 220);
-    width: 300px;
-    height: 76px;
-    border-radius:10px;
-    border-width: 0.5px;
-    border-style:solid;
-    border-color:black;
-    opacity: 0.7;
-    align-items: center; 
-    display: flex;
-    justify-content: center;
-    margin-left:30px;
-    margin-top: 70px;
-    box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5) ;
-}
-
-.header_button:hover{
-    background: #ede3ec;
-	color: #444444;
-    transition:0.6s ;
-}
-
 .text_button{
     font-size: 25px;
     text-decoration: none;
     color: #000000;
 }
-.text_header_std{
-    font-size: 100px;
-    color: White;
-    text-shadow: 1px 5px 20px black;
-    margin-left: 30px;
-    margin-bottom: 0px;
-    margin-top: 100px;
-}
-.text_header_flo{
-    font-size: 40px;
-    color: White;
-    text-shadow: 1px 5px 20px black;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    margin-left: 30px;
-}
-.header_buttons{
-    margin-left: 10px;
-    padding-top: 10px;
-    margin-bottom: 30px;
-}
 
+
+/* main */
+
+main{
+    font-family: "inter";
+}
 
 .text-studio-zag{
     text-align: center;
     font-size: 100px;
 }
+
 .text-studio-one{
     margin: 35px;
     font-size:35px;
     display: flex;
     
 }
+
 .girlcreateflower{
     width: 700px;
     height: 450px;
@@ -237,22 +298,27 @@ header{
     border-color:black;
     box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5) ;
 }
+
 .text-studio-onetext{
     padding-right: 60px;
 }
+
 .text-studio-twotext{
     padding-left: 60px;
     margin-top: 1.3%;
 }
+
 .three{
     margin-top: 5%;
 }
+
 .text-studio-two{
     margin: 30px;
     font-size:32px;
     display: flex;
     margin-top: 220px;
 }
+
 .createflower{
     width: 700px;
     height: 600px;
@@ -278,24 +344,6 @@ header{
     padding-right: 40px;
 }
 
-main{
-    font-family: "inter";
-}
-
-.inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.jura-font {
-  font-family: "Jura", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-
 .studio{ 
     width: 1200px;
     height: 800px;
@@ -305,6 +353,9 @@ main{
     border-color:black;
     margin: 60px;
 }
+
+/* footer */
+
 footer{
     background-color: #635D5C;
     color: #F2F2F2;
@@ -314,10 +365,10 @@ footer{
     font-family: "Jura";
 }
 
-
 .carta-scr{
     margin-top: 100px;
 }
+
 .carta{
     box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     border-width: 7px;
@@ -326,33 +377,17 @@ footer{
     margin-right: 70px;
     margin-bottom: 0;
 }
+
 .contacts{
     margin-left: 80px;
     font-family: "Jura";
     font-size: 30px;
 }
+
 .contact{
     margin-top: 10px;
     font-size: 90px;
     margin-bottom: 30px;
-}
-
-.header-flo{
-    background-size:100%;
-    height: 900px;
-    background-repeat: no-repeat;
-    background-color: rgb(187, 185, 186);
-    padding-top: 20px;
-    font-family: "inter";
-}
-
-.header-flo-text{
-    display: flex;
-    font-size: 30px;
-    margin: 90px;
-    font-weight: 200;
-    margin-left: 12%;
-    margin-top: 35px;
 }
 
 .strelka{
@@ -367,15 +402,9 @@ footer{
     text-decoration: none;
     color: #000000;
 }
+
 .kat-flo:hover{
     color: #e6e6e6;
-}
-.header-flo-buq{
-    text-align: center;
-    font-family: "Inter";
-    font-size: 200px;
-    font-weight: 200;
-    font-style: italic;
 }
 
 .catalog-flex{
@@ -424,16 +453,6 @@ footer{
     font-weight: 450;
     transition:0.1s;
 }
-.margn{
-    margin-bottom: 300px;
-}
-.header-flo-buq-wed{
-    text-align: center;
-    font-family: "Inter";
-    font-size: 150px;
-    font-weight: 200;
-    font-style: italic;
-}
 
 .submit{
     padding:10px 60px;
@@ -457,7 +476,7 @@ footer{
 }
 
 #email-cart{
-    background-color: #acacac;
+    background-color: #dbdbdb;
     padding-right: 70px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -466,7 +485,7 @@ footer{
 }
 
 #email{
-    background-color: #acacac;
+    background-color: #dbdbdb;
     padding-right: 70px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -475,7 +494,7 @@ footer{
 }
 
 #name{
-    background-color: #acacac;
+    background-color: #dbdbdb;
     padding-right: 70px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -484,7 +503,7 @@ footer{
 }
 
 #name-cart{
-    background-color: #acacac;
+    background-color: #dbdbdb;
     padding-right: 70px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -493,7 +512,7 @@ footer{
 }
 
 #tel{
-    background-color: #acacac;
+    background-color: #dbdbdb;
     padding-right: 70px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -522,6 +541,9 @@ form{
     margin-bottom: 70px;
 }
 
+.margn{
+    margin-bottom: 300px;
+}
 
 .forma-text{
     font-weight: 300;
@@ -555,13 +577,14 @@ form{
     padding-left: 40px;
     padding-bottom: 60px; 
     width: 400px;
+    height: 570px;
     box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     border-style:solid;
     border-color:black;
     border-radius: 0px;
     border-width: 1px;
     opacity: 80%;
-    margin-left: 150px;
+    margin-left: 165px;
 }
 
 .submit-cart{
@@ -577,6 +600,7 @@ form{
     font-family: "Jura";
     margin-top: 20%;
 }
+
 .submit-cart:hover{
     background-color: #acacac;
     transition: 0.3s;
@@ -592,36 +616,44 @@ form{
     align-items: center;
     height: 60px;
 }
+
 .number{
     width:40px ;
     height:40px ;
     display: flex;
     margin-right: 20px;
 }
+
 .cont{
     margin-bottom: 30px;
     margin-top: 10px;
     font-size: 48px;
 }
+
 .socialnetwork{
     display: inline-flex;
     margin-top: 10px;
 }
+
 .size{
     width:70px ;
     height:70px ;
     padding: 23px;
 }
+
 .navbar{
     margin-top: 85px;
     font-size: 20px;
 }
+
 .navbar p{
     color:white;
 }
+
 .navbar a{
     text-decoration: none;
 }
+
 .navbar p:hover{
     color: #000;
 }
