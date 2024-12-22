@@ -354,6 +354,49 @@ main{
     margin: 60px;
 }
 
+.questions{
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding: 110px 580px;
+    background-color:#BBB9BA;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Jura";
+    max-width: 100%;
+    max-height: 40%;
+    border-width: 0.5px;
+    border-style:solid;
+    border-color:black;
+}
+#email-que{
+    width: 350px;
+    height: 25px;
+}
+
+#question{
+    width: 350px;
+    height: 50px;
+}
+
+.submit-que{
+    padding:10px 105px;
+    background-color: #635D5C;
+    box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-width: 0.5px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 90px;
+    color: #fff;
+    font-size: 30px;
+    font-family: "Jura";
+    margin-top: 5%;
+}
+
+.submit-que:hover{
+    background-color: #acacac;
+    transition: 0.3s;
+}
+
 /* footer */
 
 footer{

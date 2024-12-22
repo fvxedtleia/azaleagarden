@@ -49,23 +49,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('order-form');
 
     form.addEventListener('submit', function(event) {
-        // Предотвращаем стандартное поведение формы
         event.preventDefault();
 
-        // Получаем значения из полей ввода
         const name = document.getElementById('name-cart').value;
         const email = document.getElementById('email-cart').value;
         const tel = document.getElementById('tel').value;
 
-        // Здесь вы можете выполнить действия с данными, например, отправить их на сервер
 
-        // Выводим сообщение (можно заменить на alert или другой способ отображения)
-        /* alert(`Спасибо за ваш заказ, ${name}!\nВаш Email: ${email}\nВаш номер: ${tel}`); */
         messg.textContent = `Заказ оформлен, ${name}!`;
         messg.classList.remove('hidd');
 
-        // Очищаем форму
         form.reset();
     });
 });
 
+function que(event) {
+    event.preventDefault(); 
+
+    const name = document.getElementById('name').value;
+    const message = document.getElementById('message');
+
+    message.textContent = `Обязательно ответим на Ваш вопрос!`;
+    message.classList.remove('hidden'); 
+
+    document.getElementById('que-form').reset();
+}
