@@ -67,10 +67,10 @@ function que(event) {
     event.preventDefault(); 
 
     const name = document.getElementById('name').value;
-    const message = document.getElementById('message');
+    const message = document.getElementById('messag');
 
     message.textContent = `Обязательно ответим на Ваш вопрос!`;
-    message.classList.remove('hidden'); 
+    message.classList.remove('hiddenn'); 
 
     document.getElementById('que-form').reset();
 }
